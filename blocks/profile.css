@@ -11,8 +11,8 @@
 
 .profile__item-image {
   height: 120px;
-  width: 120px;  
-  border-radius: 50%;  
+  width: 120px; 
+  border-radius: 50%;
   margin-right: 24px;
 }
 
@@ -21,7 +21,7 @@
     grid-template-areas:
         "title button"
         "description description";
-    grid-template-columns: minmax(auto,373px) auto;  
+    grid-template-columns: minmax(auto,373px) auto;
     max-width: 880px;
     max-height: 120px;
       
