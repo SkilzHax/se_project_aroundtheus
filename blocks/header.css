@@ -8,3 +8,15 @@
   
    
 }
+
+.header__title {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .header__title {
+        margin-left: 27px;
+    }
+}

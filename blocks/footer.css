@@ -14,3 +14,17 @@
  max-width: 318px;
  max-height: 18px;
 }
+
+@media screen and (max-width: 480px) {
+    .footer {
+        margin-top: 2762px;
+        margin-left: 19px;
+        width: 282px;
+        height: 14px;
+    }
+    .footer__description {
+        
+        max-width: 282px;
+        max-height: 14px;
+    }
+}
