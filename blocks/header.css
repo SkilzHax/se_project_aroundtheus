@@ -18,7 +18,13 @@
 
 @media screen and (max-width: 480px) {
 
+    .header {
+        width: 320px;
+        height: 50px;
+        margin-left: 19px;
+    }
+
     .header__title {
-        margin-left: 27px;
+        margin: 0;
     }
 }
