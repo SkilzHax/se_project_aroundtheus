@@ -15,22 +15,15 @@
  max-height: 18px;
 }
 
-@media screen and (max-width: 480px) {
-    .footer {
-        margin-top: 1582px;
-        margin-left: 19px;
-        margin-bottom: 32px;
-        width: 282px;
-        height: 14px;
-        
-    }
-    .footer__description {
-        max-width: 282px;
-        max-height: 14px;
-        color: #545454;
-        font-size: 14px;
-        font-family: Inter;
-        font-weight: 400;
-        word-wrap: break-word;
-    }
+@media screen and (max-width: 320px) {
+   .footer {
+    margin: 0;
+   }
+}
+
+@media screen and (max-width: 1280px) {
+   .footer {
+    margin-top: 445px;
+    margin-right: 19px;
+   }
 }

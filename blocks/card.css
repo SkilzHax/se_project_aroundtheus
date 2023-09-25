@@ -83,6 +83,7 @@ border-bottom-right-radius: 10px;
     .card {
         height: 100%;
         margin-left: 19px;
+        
     }
 
     .card__list {
@@ -95,4 +96,13 @@ border-bottom-right-radius: 10px;
         
     }
 
+}
+
+@media screen and (min-width: 1280px) {
+    .card__list {
+        max-height: 775px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }

@@ -38,3 +38,9 @@
         
     }
 }
+@media screen and (min-width: 320px) {
+    .page {
+        max-height: 2812px;
+        
+    }
+}
