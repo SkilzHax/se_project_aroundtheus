@@ -1,13 +1,6 @@
-.card {
-    margin-top: 30px;
-    margin-right: 200px;
-    margin-left: 200px;
-    max-width: 880px;
-    max-height: 742px;
-    
-    
-    
-    
+.cards {
+   margin: 30px 200px 0;
+    max-width: 880px;  
 }
 
 .card__list {
@@ -18,69 +11,15 @@
     padding: 0;
     list-style-type: none;
     max-width: 880px;
-    max-height: 742px;
-}
-
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    list-style-type: none;
-    
-}
-
-.card__image {
-    width: 282px;
-    height: 282px;
-}
-
-.card__rectangle {
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: white;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-}
-
-.card__description {
-    
-    font-size: 24px;
-    font-family: Inter, Arial, sans-serif;
-    font-weight: 900;
-    word-wrap: break-word;
     margin: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: space-between;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 193px;
-    max-height: 29px;
 }
 
-.card__like-button {
-    background: transparent url(../images/Heart.svg)  center;
-    width: 21px;
-    height: 18px;
-    border: none;
-    margin-right: 20px;
-}
 
-.card__like-button:hover {
-    background: url(../images/Like\ Button\ Hover.svg) no-repeat;
-    
-}
+
 
 @media screen and (max-width: 480px) {
     
-    .card {
+    .cards {
         height: 100%;
         margin-left: 19px;
         
@@ -92,17 +31,8 @@ border-bottom-right-radius: 10px;
         flex-wrap: wrap;
         flex-direction: column;
         max-width: 282px;
-        max-height: 2266px;
+        
         
     }
 
-}
-
-@media screen and (min-width: 1280px) {
-    .card__list {
-        max-height: 775px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
 }

@@ -23,7 +23,7 @@
         "description description";
     grid-template-columns: minmax(auto,373px) auto;
     max-width: 880px;
-    max-height: 120px;
+    
       
 }
 
@@ -33,7 +33,6 @@
  font-family: Inter, Arial, sans-serif;
  font-weight: 500;
  line-height: 48px;
- word-wrap: break-word;
  grid-area: title;
  margin-top: 22px;
  margin-bottom: 7px;
@@ -44,7 +43,6 @@ color: white;
  font-size: 18px;
  font-family: Inter, Arial, sans-serif;
  font-weight: 400;
- word-wrap: break-word;
  grid-area: description;
  margin: 0;
 }
@@ -61,7 +59,7 @@ color: white;
 }
 
 .profile__edit-button:hover {
-  background: url(../images/Edit\ Button\ Hover.svg);
+  opacity: 0.50;
 }
 
 .profile__add-button {
@@ -71,13 +69,13 @@ color: white;
     margin-left: auto;
     margin-top: 35px;
     border-color: white;
+    border-width: 2px; 
+    border-radius: 10px;
     
 }
 
 .profile__add-button:hover {
-  background: url(../images/Add\ Button\ Hover.svg) center;
-  
-  
+  opacity: 0.50;
 }
 
 
@@ -93,7 +91,7 @@ color: white;
     justify-content: center;
     margin-left: 19px;
     width: 282px;
-    height:  286px;
+    
    }  
 
     .profile__item-image {
@@ -108,7 +106,6 @@ color: white;
       justify-content: center;
       align-content: center;
       max-width: 282px;
-      max-height: 50px;
       margin-top: 26px;
      
     }
@@ -118,8 +115,6 @@ color: white;
    font-size: 22px;
    font-family: Inter, Arial, sans-serif;
    font-weight: 500;
-   word-wrap: break-word;
-   max-height: 22px;
    }
 
   .profile__job {
@@ -129,8 +124,6 @@ color: white;
   font-size: 14px;
   font-family: Inter, Arial, sans-serif;
   font-weight: 400;
-  word-wrap: break-word;
-  height: 14px;
   margin-top: 14px;
 }
 
@@ -148,7 +141,7 @@ color: white;
   
 }
 .profile__add-button:hover { 
- background: url(../images/Add\ Button\ Hover.svg) center no-repeat;
+ opacity: 0.50;
   width: 100%;
 
 }

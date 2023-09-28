@@ -1,29 +1,23 @@
 .footer{
  margin: 67px 200px 60px;
- 
-
 }
 
-.footer__description {
-    
+.footer__description {  
  color: #545454;
  font-size: 18px;
  font-family: Inter, Arial, sans-serif;
  font-weight: 400;
- word-wrap: break-word;
- max-width: 318px;
- max-height: 18px;
+}
+
+
+@media screen and (max-width: 1280px) {
+   .footer {
+    margin-right: 19px;
+   }
 }
 
 @media screen and (max-width: 320px) {
    .footer {
     margin: 0;
-   }
-}
-
-@media screen and (max-width: 1280px) {
-   .footer {
-    margin-top: 445px;
-    margin-right: 19px;
    }
 }
