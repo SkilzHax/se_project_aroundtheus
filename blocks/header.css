@@ -23,5 +23,11 @@
 @media screen and (max-width: 600px) {
   .header {
     width: 320px;
+    height: 56px;
+  }
+  .header__image {
+    width: 126px;
+    height: 24px;
+    margin-bottom: 32px;
   }
 }
