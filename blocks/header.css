@@ -24,10 +24,12 @@
   .header {
     width: 320px;
     height: 56px;
+    margin-top: 28px;
+    margin-bottom: 42px;
   }
   .header__image {
     width: 126px;
     height: 24px;
-    margin-bottom: 32px;
+    margin: 0 auto 32px 27px;
   }
 }
