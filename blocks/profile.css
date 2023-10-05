@@ -51,7 +51,7 @@
 }
 
 .profile__edit-button {
-  background: transparent url(../images/Edit\ Button\ 2.svg) no-repeat;
+  background: transparent url(../images/Edit\ Button.svg) no-repeat;
   width: 24px;
   height: 24px;
   grid-area: button;
@@ -113,7 +113,6 @@
 
 @media screen and (max-width: 600px) {
   .profile {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
