@@ -106,9 +106,7 @@
 
 @media screen and (max-width: 600px) {
   .profile {
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     width: 282px;
   }
 
