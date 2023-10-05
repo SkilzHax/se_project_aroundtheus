@@ -91,17 +91,11 @@
     max-width: 273px;
   }
   .profile__name {
-    color: white;
     font-size: 26px;
-    font-family: Inter, Arial, sans-serif;
-    font-weight: 500;
   }
 
   .profile__job {
-    color: white;
     font-size: 14px;
-    font-family: Inter, Arial, sans-serif;
-    font-weight: 400;
     width: 100%;
   }
 
@@ -125,29 +119,18 @@
   }
 
   .profile__info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
     max-width: 282px;
     margin-top: 26px;
   }
 
   .profile__name {
-    color: white;
     font-size: 22px;
-    font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
   }
 
   .profile__job {
-    width: 100%;
     text-align: center;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
     margin-top: 0;
   }
 
@@ -165,9 +148,5 @@
     padding: 0;
     margin-top: 36px;
     margin-bottom: 0;
-  }
-  .profile__add-button:hover {
-    opacity: 0.6;
-    width: 100%;
   }
 }
