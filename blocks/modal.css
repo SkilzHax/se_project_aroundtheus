@@ -47,7 +47,7 @@
   margin-top: 54px;
   width: 358px;
 }
-.modal__form .profile__name {
+.modal__form .name {
   grid-area: name;
   padding: 0;
   width: 358px;
@@ -62,7 +62,7 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.modal__form .profile__job {
+.modal__form .job {
   grid-area: job;
   padding: 0;
   width: 358px;
@@ -141,7 +141,7 @@
     margin-top: 75px;
     width: 238px;
   }
-  .modal__form .profile__name {
+  .modal__form .name {
     width: 238px;
     height: 27px;
     font-family: Inter;
@@ -149,7 +149,7 @@
     font-weight: 400;
     line-height: 17px;
   }
-  .modal__form .profile__job {
+  .modal__form .job {
     width: 238px;
     font-family: Inter;
     font-size: 14px;
