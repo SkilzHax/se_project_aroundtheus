@@ -1,0 +1,168 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 19px;
+}
+
+.modal_opened {
+  display: flex;
+}
+
+.modal__container {
+  position: relative;
+  padding: 34px 36px 36px;
+  background-color: white;
+  border-radius: 10px;
+  width: 358px;
+  height: 259px;
+}
+
+.modal__heading {
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 900;
+  width: 330px;
+  height: 23px;
+  margin: 0;
+}
+
+.modal__form {
+  display: grid;
+  grid-template-areas:
+    "name"
+    "job"
+    "button";
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 54px;
+  width: 358px;
+}
+.modal__form .profile__name {
+  grid-area: name;
+  padding: 0;
+  width: 358px;
+  height: 27px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border: none;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.modal__form .profile__job {
+  grid-area: job;
+  padding: 0;
+  width: 358px;
+  border: none;
+  height: 27px;
+  margin-bottom: 48px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.modal__form .modal__button {
+  padding: 0;
+  grid-area: button;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+
+/*.modal__form::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  opacity: 0.7;
+  background: #545454;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}*/
+
+.modal__close {
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  background: url("../images/Close-ico.svg") no-repeat;
+  background-size: contain;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+  .modal__container {
+    width: 238px;
+    height: 272px;
+    padding: 25px 22px;
+  }
+  .modal__close {
+    width: 26px;
+    height: 26px;
+    top: -39px;
+    right: 0;
+  }
+  .modal__heading {
+    width: 238px;
+    height: 22px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+  }
+  .modal__form {
+    margin-top: 75px;
+    width: 238px;
+  }
+  .modal__form .profile__name {
+    width: 238px;
+    height: 27px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .modal__form .profile__job {
+    width: 238px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .modal__form .modal__button {
+    padding: 0;
+    border: none;
+    height: 46px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+}
