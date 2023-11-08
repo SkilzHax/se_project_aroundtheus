@@ -36,7 +36,7 @@ const cardAddModal = document.querySelector("#add-card-modal");
 const previewImg = document.querySelector("#image__modal");
 
 const profileEditCls = profileEditModal.querySelector("#edit-close");
-const cardClose = cardAddModal.querySelector("#edit-close");
+const cardClose = cardAddModal.querySelector("#card-edit-close");
 const imgCls = previewImg.querySelector("#edit-close");
 
 const profileName = document.querySelector(".profile__name");
