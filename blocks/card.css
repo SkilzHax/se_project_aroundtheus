@@ -52,11 +52,6 @@
   border: none;
 }
 
-.card__image-pop-out {
-  width: 433px;
-  height: 540px;
-}
-
 .card__like-button_active {
   background-image: url(../images/Like-active.svg);
 }
