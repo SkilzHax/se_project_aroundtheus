@@ -117,6 +117,15 @@
   cursor: pointer;
 }
 
+.modal__img__container {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  width: 433px;
+  height: 540px;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
 @media screen and (max-width: 620px) {
   .modal__container {
     width: 238px;

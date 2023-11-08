@@ -44,6 +44,22 @@
   margin-right: 20px;
   cursor: pointer;
 }
+.trash__icon {
+  background: url(../images/Trash.svg);
+  width: 18px;
+  height: 19px;
+  position: absolute;
+  border: none;
+}
+
+.card__image-pop-out {
+  width: 433px;
+  height: 540px;
+}
+
+.card__like-button_active {
+  background-image: url(../images/Like-active.svg);
+}
 
 .card__like-button:hover {
   opacity: 0.5;
