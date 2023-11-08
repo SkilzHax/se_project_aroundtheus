@@ -42,7 +42,7 @@ const imgCls = previewImg.querySelector("#image-edit-close");
 const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__job");
 const addCardElement = cardAddModal.querySelector(".modal__form");
-const imgPopout = previewImg.querySelector(".modal-image__pop-out");
+const imgPopout = previewImg.querySelector(".modal-pop-out");
 
 const profileNameInput = document.querySelector("#profile-name-input");
 const profileJobInput = document.querySelector("#profile-job-input");
