@@ -126,7 +126,7 @@
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-.modal__image-container__pop-out {
+.modal-image__pop-out {
   width: 433px;
   height: 540px;
 }
