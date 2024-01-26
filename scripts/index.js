@@ -43,6 +43,7 @@ const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__job");
 const addCardElement = cardAddModal.querySelector(".modal__form");
 const imgPopout = previewImg.querySelector(".modal-pop-out");
+const imgPopoutDesc = previewImg.querySelector(".modal__description");
 
 const profileNameInput = document.querySelector("#profile-name-input");
 const profileJobInput = document.querySelector("#profile-job-input");
@@ -90,6 +91,7 @@ function getCardElement(cardData) {
 
   cardImageEL.addEventListener("click", () => {
     imgPopout.src = cardImageEL.src;
+    imgPopoutDesc.textContent = cardTitleEL.innerText;
     openModal(previewImg);
   });
 
@@ -101,7 +103,7 @@ function getCardElement(cardData) {
 
   cardTitleEL.textContent = cardData.name;
   cardImageEL.src = cardData.link;
-  cardImageEL.alt = cardData.name;
+  cardTitleEL.alt = cardData.name;
 
   return cardElement;
 }

@@ -10,6 +10,7 @@
   height: 282px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  cursor: pointer;
 }
 
 .card__rectangle {
@@ -48,8 +49,10 @@
   background: url(../images/Trash.svg);
   width: 18px;
   height: 19px;
-  position: absolute;
+  position: relative;
   border: none;
+  top: 32px;
+  left: 250px;
 }
 
 .card__like-button_active {

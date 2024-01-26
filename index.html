@@ -74,8 +74,12 @@
 
     <div class="modal" id="add-card-modal">
       <div class="modal__container">
-        <button class="modal__close" id="card-edit-close"></button>
-        <p class="modal__heading">New Place</p>
+        <button
+          type="button"
+          class="modal__close"
+          id="card-edit-close"
+        ></button>
+        <h class="modal__heading">New Place</h>
         <form class="modal__form">
           <input
             type="text"
@@ -89,7 +93,7 @@
             class="job modal__URL"
             id="profile-image-input"
           />
-          <button class="modal__button">Create</button>
+          <button type="button" class="modal__button">Create</button>
         </form>
       </div>
     </div>
@@ -114,9 +118,10 @@
       <div class="modal__img-container">
         <button class="modal__close" id="image-edit-close"></button>
         <img src="#" alt="" id="pop_out_url__image" class="modal-pop-out" />
+        <p class="modal__description"></p>
       </div>
     </div>
 
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
