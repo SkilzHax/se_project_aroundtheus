@@ -43,7 +43,7 @@
   margin: 0;
 }
 
-.modal__form {
+.modal__input {
   display: grid;
   grid-template-areas:
     "name"
@@ -55,7 +55,7 @@
   margin-top: 54px;
   width: 358px;
 }
-.modal__form .name {
+.modal__input .name {
   grid-area: name;
   padding: 0;
   height: 27px;
@@ -69,7 +69,7 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.modal__form .job {
+.modal__input .job {
   grid-area: job;
   padding: 0;
   width: 358px;
@@ -84,7 +84,7 @@
   text-align: left;
 }
 
-.modal__form .modal__button {
+.modal__input .modal__button {
   padding: 0;
   grid-area: button;
   background-color: #000;
@@ -167,25 +167,25 @@
     font-weight: 900;
     line-height: 22px;
   }
-  .modal__form {
+  .modal__input {
     margin-top: 75px;
     width: 238px;
   }
-  .modal__form .name {
+  .modal__input .name {
     height: 27px;
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
   }
-  .modal__form .job {
+  .modal__input .job {
     width: 238px;
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
   }
-  .modal__form .modal__button {
+  .modal__input .modal__button {
     padding: 0;
     border: none;
     height: 46px;
