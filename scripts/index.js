@@ -41,7 +41,7 @@ const imgCls = previewImg.querySelector("#image-edit-close");
 
 const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__job");
-const addCardElement = cardAddModal.querySelector(".modal__form");
+const addCardElement = cardAddModal.querySelector(".modal__input");
 const imgPopout = previewImg.querySelector(".modal-pop-out");
 const imgPopoutDesc = previewImg.querySelector(".modal__description");
 
@@ -50,7 +50,7 @@ const profileJobInput = document.querySelector("#profile-job-input");
 const cardTitleInput = addCardElement.querySelector(".modal__name");
 const cardImgInput = addCardElement.querySelector(".modal__URL");
 
-const profileEditForm = profileEditModal.querySelector(".modal__form");
+const profileEditForm = profileEditModal.querySelector(".modal__input");
 
 const cardListEL = document.querySelector(".cards__list");
 const cardTemplate =
