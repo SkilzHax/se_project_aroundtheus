@@ -37,11 +37,11 @@ const previewImg = document.querySelector("#image__modal");
 
 const profileEditCls = profileEditModal.querySelector("#edit-close");
 const cardClose = cardAddModal.querySelector("#card-edit-close");
-const imgCls = previewImg.querySelector("#image-edit-close");
+const previewCloseButton = previewImg.querySelector("#image-edit-close");
 
 const profileName = document.querySelector(".profile__name");
 const profileJob = document.querySelector(".profile__job");
-const addCardElement = cardAddModal.querySelector(".modal__input");
+const addCardElement = cardAddModal.querySelector(".modal__form");
 const imgPopout = previewImg.querySelector(".modal-pop-out");
 const imgPopoutDesc = previewImg.querySelector(".modal__description");
 
@@ -50,7 +50,7 @@ const profileJobInput = document.querySelector("#profile-job-input");
 const cardTitleInput = addCardElement.querySelector(".modal__name");
 const cardImgInput = addCardElement.querySelector(".modal__URL");
 
-const profileEditForm = profileEditModal.querySelector(".modal__input");
+const profileEditForm = profileEditModal.querySelector(".modal__form");
 
 const cardListEL = document.querySelector(".cards__list");
 const cardTemplate =
@@ -58,6 +58,7 @@ const cardTemplate =
 
 function closePopup(modal) {
   modal.classList.remove("modal_opened");
+  previewCloseButton.addEventListener("click", () => closePopup(previewImg));
 }
 
 function openModal(modal) {
@@ -82,6 +83,7 @@ function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEL = cardElement.querySelector(".card__image");
   const cardTitleEL = cardElement.querySelector(".card__description");
+  const cardAlt = cardElement.querySelector(".alt");
   const likeBtn = cardElement.querySelector(".card__like-button");
   const trashBtn = cardElement.querySelector(".trash__icon");
 
@@ -91,11 +93,9 @@ function getCardElement(cardData) {
 
   cardImageEL.addEventListener("click", () => {
     imgPopout.src = cardImageEL.src;
-    imgPopoutDesc.textContent = cardTitleEL.innerText;
+    imgPopout.alt = imgPopoutDesc.textContent = cardTitleEL.innerText;
     openModal(previewImg);
   });
-
-  imgCls.addEventListener("click", () => closePopup(previewImg));
 
   likeBtn.addEventListener("click", () => {
     likeBtn.classList.toggle("card__like-button_active");
@@ -103,7 +103,7 @@ function getCardElement(cardData) {
 
   cardTitleEL.textContent = cardData.name;
   cardImageEL.src = cardData.link;
-  cardTitleEL.alt = cardData.name;
+  cardAlt.alt = cardData.name;
 
   return cardElement;
 }
