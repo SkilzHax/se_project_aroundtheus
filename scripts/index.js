@@ -51,6 +51,7 @@ const addCardElement = cardAddModal.querySelector(".modal__form");
 
 const imgPopout = previewImg.querySelector(".modal-pop-out");
 const imgPopoutDesc = previewImg.querySelector(".modal__description");
+const imgAlt = previewImg.querySelector(".imgalt");
 const profileNameInput = document.querySelector("#profile-name-input");
 const profileJobInput = document.querySelector("#profile-job-input");
 const cardTitleInput = addCardElement.querySelector(".modal__name");
@@ -93,7 +94,7 @@ function getCardElement(cardData) {
   const cardImageEL = cardElement.querySelector(".card__image");
   const cardTitleEL = cardElement.querySelector(".card__description");
   const likeBtn = cardElement.querySelector(".card__like-button");
-  const trashBtn = cardElement.querySelector(".trash__icon");
+  const trashBtn = cardElement.querySelector(".card__trash-icon");
 
   trashBtn.addEventListener("click", () => {
     cardElement.remove();
@@ -101,7 +102,7 @@ function getCardElement(cardData) {
 
   cardImageEL.addEventListener("click", () => {
     imgPopout.src = cardImageEL.src;
-    imgPopoutDesc.alt = cardTitleEL.innerText;
+    imgAlt.alt = cardImageEL.alt;
     imgPopoutDesc.textContent = cardTitleEL.innerText;
 
     openModal(previewImg);
