@@ -60,24 +60,24 @@
       <div class="modal__container">
         <button class="modal__close" id="edit-close"></button>
 
-        <p class="modal__heading">Edit Profile</p>
+        <h2 class="modal__heading">Edit Profile</h2>
 
         <form class="modal__form">
           <input
             type="text"
             placeholder="Name"
-            class="name"
+            class="modal__input"
             id="profile-name-input"
           />
 
           <input
             type="text"
             placeholder="Job"
-            class="job"
+            class="modal__input"
             id="profile-job-input"
           />
 
-          <button class="modal__button">Save</button>
+          <button class="modal__button" type="submit">Save</button>
         </form>
       </div>
     </div>
@@ -90,31 +90,31 @@
           id="card-edit-close"
         ></button>
 
-        <h class="modal__heading">New Place</h>
+        <h2 class="modal__heading">New Place</h2>
 
         <form class="modal__form">
           <input
             type="text"
             placeholder="Title"
-            class="name modal__name"
+            class="modal_input"
             id="profile-title-input"
           />
 
           <input
             type="text"
             placeholder="Image URL"
-            class="job modal__URL"
+            class="modal__input"
             id="profile-image-input"
           />
 
-          <button type="button" class="modal__button">Create</button>
+          <button type="submit" class="modal__button">Create</button>
         </form>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
-        <button class="trash__icon" type="button"></button>
+        <button class="card__trash-icon" type="button"></button>
 
         <img src="" alt="" id="url__image" class="card__image" />
 
