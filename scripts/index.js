@@ -102,7 +102,7 @@ function getCardElement(cardData) {
 
   cardImageEL.addEventListener("click", () => {
     imgPopout.src = cardImageEL.src;
-    imgAlt.alt = cardImageEL.alt;
+    imgPopout.alt = cardImageEL.alt;
     imgPopoutDesc.textContent = cardTitleEL.innerText;
 
     openModal(previewImg);
