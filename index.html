@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <title>Around the U.S</title>
 
     <link href="./pages/index.css" rel="stylesheet" />
@@ -18,7 +14,6 @@
       <header class="header page__section">
         <img src="./images/Logo2.svg" alt="logo" class="header__image" />
       </header>
-
       <main>
         <section class="profile page__section">
           <img
@@ -50,7 +45,6 @@
           <ul class="cards__list"></ul>
         </section>
       </main>
-
       <footer class="footer page__section">
         <p class="footer__description">&copy; 2023 Around The U.S</p>
       </footer>
@@ -59,25 +53,21 @@
     <div class="modal" id="edit-modal">
       <div class="modal__container">
         <button class="modal__close" id="edit-close"></button>
-
         <h2 class="modal__heading">Edit Profile</h2>
-
-        <form class="modal__form">
+        <form class="modal__input">
           <input
             type="text"
             placeholder="Name"
-            class="modal__input"
+            class="name"
             id="profile-name-input"
           />
-
           <input
             type="text"
             placeholder="Job"
-            class="modal__input"
+            class="job"
             id="profile-job-input"
           />
-
-          <button class="modal__button" type="submit">Save</button>
+          <button class="modal__button">Save</button>
         </form>
       </div>
     </div>
@@ -89,38 +79,32 @@
           class="modal__close"
           id="card-edit-close"
         ></button>
-
         <h2 class="modal__heading">New Place</h2>
-
-        <form class="modal__form">
+        <form class="modal__input">
           <input
             type="text"
             placeholder="Title"
-            class="modal_input"
+            class="name modal__name"
             id="profile-title-input"
           />
-
           <input
             type="text"
             placeholder="Image URL"
-            class="modal__input"
+            class="job modal__URL"
             id="profile-image-input"
           />
-
-          <button type="submit" class="modal__button">Create</button>
+          <button type="button" class="modal__button">Create</button>
         </form>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
-        <button class="card__trash-icon" type="button"></button>
-
+        <button class="trash__icon" type="button"></button>
         <img src="" alt="" id="url__image" class="card__image" />
 
         <div class="card__rectangle">
           <h2 class="card__description"></h2>
-
           <button
             type="button"
             id="like-button"
@@ -133,14 +117,7 @@
     <div class="modal" id="image__modal">
       <div class="modal__img-container">
         <button class="modal__close" id="image-edit-close"></button>
-
-        <img
-          src="#"
-          alt="imgalt"
-          id="pop_out_url__image"
-          class="modal-pop-out"
-        />
-
+        <img src="#" alt="" id="pop_out_url__image" class="modal-pop-out" />
         <p class="modal__description"></p>
       </div>
     </div>
