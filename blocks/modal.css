@@ -19,11 +19,8 @@
 
 .modal_opened {
   visibility: visible;
-
   opacity: 1;
-
   pointer-events: all;
-
   transition: visibility 0s, opacity 0.5s linear;
 }
 
@@ -43,36 +40,24 @@
 
 .modal__heading {
   color: black;
-
   font-size: 24px;
-
   font-family: Inter;
-
   font-weight: 900;
-
   width: 330px;
-
   height: 23px;
-
   margin: 0;
 }
 
 .modal__form {
   display: grid;
-
   grid-template-areas:
     "name"
     "job"
     "button";
-
   justify-content: center;
-
   align-items: center;
-
   align-content: center;
-
   margin-top: 54px;
-
   width: 358px;
 }
 
