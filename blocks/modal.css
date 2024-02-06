@@ -145,7 +145,7 @@
   cursor: pointer;
 }
 
-.modal__close {
+.modal__close:hover {
   opacity: 0.8;
 }
 
